@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./app.js"></script>
+  <title>Document</title>
+</head>
+<style>
+
+body { 
+  background-image: url('https://thumbs.dreamstime.com/z/small-abstract-symbols-drawn-pen-white-background-variety-flourishes-142946812.jpg')
+}
+
+.text-alignment {
+  text-align: center;
+  background-image:url('https://wallpaperaccess.com/full/4700235.jpg');
+  padding-top: 5px;
+  padding-right: 80px;
+  padding-bottom: 200px;
+  padding-left: 82px;
+  border-style: solid;
+  border-radius: 15px;
+  margin: 200px 50px;
+  background-size: 1150px;
+  background-position: center;
+}
+
+p{
+text-align: center;
+  color: rgb(139,0,0);
+  text-shadow: 1px 1px #000000;
+  font-size: 50px;
+}
+
+p1, p2{
+text-align: center;
+  color: rgb(245, 95, 9);
+  text-shadow: 2px 1px #353333;
+  font-size: 35px;
+  padding-top: 5%;
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+
+}
+
+.test, .reset {
+  padding: 0.8rem;
+	width: 120px;
+	border-radius: 10px;
+	background: orange;
+	outline: none;
+	border-color: white;
+	border: 3px lack;
+	cursor: pointer;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+#frame {
+  padding-top: 3%;
+  padding-bottom: 10px;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+</style>
+
+<body>
+<div class="text-alignment">
+  <p id=test> Enter your numbers below: </p>
+  <input type="number" id="frame" >
+  <br>
+  <p1 id="p1">Your numbers: </p1> </br>
+  <p2 id="p2"> </p2>
+    <div class="buttons">
+      <button class="test" id=testbutton onclick="pushToStr()"> Submit </button>
+      <button class="reset" id=resetbutton onclick="emptyArr()"> Reset </button>
+
+      <button onclick="firstGame(getGuess())">Try it</button>
+    </div>
+</div>
+
+</body>
+</html>
+
