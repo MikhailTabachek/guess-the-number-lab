@@ -78,12 +78,12 @@ render: function(){
 
 // this works => 
 //console.log(firstGame.getGuess())
-console.log(firstGame.play())
+// console.log(firstGame.play())
 //console.log(firstGame.prevGuesses[0])
 
 
 
-firstGame.play();
+// firstGame.play();
 
 
 
