@@ -35,6 +35,7 @@ const firstGame = {
   },
 
   pushToStr: function(){
+    // this will show numbers that were previosly guessed
     let inputText = document.getElementById('frame').value;
     this.prevGuesses.unshift(inputText),
     document.getElementById('p2').innerHTML = this.prevGuesses;
