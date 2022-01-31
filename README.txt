@@ -1,1 +1,1 @@
-This is a game called Guess The Number.
+This is a game called Guess The Number. You need to enter a number between 1 - 100. If you type a text or number out of range, it will show a prompt to enter a correct number. User wins when generated number matches to users input number. I've spent over 12 hours working on JS and responsive CSS. Enjoy!
