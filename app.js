@@ -1,24 +1,4 @@
 
-let arr1 = [];
-function pushToStr() {
-  let inputText = document.getElementById('frame').value;
-  
-  arr1.unshift(inputText),
-
-  console.log(arr1)
-
-  document.getElementById('p2').innerHTML = arr1;
-  console.log (inputText)
-
-  }
-
-  function emptyArr() {
-    console.log(arr1.length)
-    
-      }
-
-
-
 const firstGame = {
   title: 'Guess the Number!',
   biggestNum: 100,
@@ -28,14 +8,16 @@ const firstGame = {
   prevGuesses: [],
 
   play: function() {
+    // this function generates random number and stores as a value in secretNum:
     this.secretNum = Math.floor(Math.random() * 
       (this.biggestNum - this.smallestNum + 1)) + this.smallestNum
     
     this.getGuess();
-    console.log(this.secretNum)
+    //console.log(this.secretNum)
   },
 
   getGuess: function(){
+    //this method takes user input and pushes to an array
     let guessNum = 0;
     guessNum = parseInt (prompt (`Enter a guess number from ${this.smallestNum} and ${this.biggestNum}`))
     while ((isNaN(guessNum)) || guessNum < this.smallerNum || guessNum > this.biggestNum){
@@ -45,13 +27,12 @@ const firstGame = {
 
     this.render()
 
-    console.log(this.prevGuesses[0])
+    //console.log(this.prevGuesses[0])
       
     },
     
-    
-
-render: function(){
+    render: function(){
+  //this method compares 2 numbers and shows result
   let newNum = this.prevGuesses[0]
       if(this.prevGuesses[0] === this.secretNum) {
         alert (`Congrats! You guessed the number correctly.`)
@@ -83,28 +64,11 @@ render: function(){
 
 
 
-// firstGame.play();
+firstGame.play();
 
 
 
-
-
-
-
-function resetButton() {
-  document.getElementById("p1").innerHTML = "Your numbers: ";
- }
-
-function applyButton() {
-  document.getElementById("p1").innerHTML = "Your numbers: 123";
- }
-
-let test = document.getElementById("test").innerHTML
-console.log(test)
-
-
-
-//-------------------------------
+//------------------------------- this is another method ----
   // getGuess: function(){
   //   let guessNum = 0;
   //   guessNum = parseInt (prompt (`Enter a guess between ${this.smallestNum} and ${this.biggestNum}`))
